@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, Award, Sparkles, Linkedin } from "lucide-react";
+import { GraduationCap, Award, Sparkles } from "lucide-react";
 
 const education = [
     { degree: "Master of Business Administration (MBA)", institution: "University of Melbourne" },

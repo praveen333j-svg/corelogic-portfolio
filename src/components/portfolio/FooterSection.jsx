@@ -1,11 +1,9 @@
 import React from "react";
 import { createPageUrl } from "@/utils";
+import { Link } from "react-router-dom";
+import { portfolioPages } from "@/components/portfolio/portfolioPages";
 
-const pages = [
-    { label: "Core Platform Expertise", page: "Home" },
-    { label: "Product Launch Gallery", page: "ProductLaunchGallery" },
-    { label: "Enterprise Transformation", page: "EnterpriseTransformation" },
-];
+const pages = portfolioPages;
 
 export default function FooterSection() {
     return (
@@ -31,13 +29,13 @@ export default function FooterSection() {
                         <div className="text-xs font-semibold uppercase tracking-widest text-slate-600 mb-4">Portfolio</div>
                         <div className="space-y-2">
                             {pages.map((p) => (
-                                <a
+                                <Link
                                     key={p.page}
-                                    href={createPageUrl(p.page)}
+                                    to={createPageUrl(p.page)}
                                     className="block text-sm text-slate-500 hover:text-[#c9a84c] transition-colors duration-200"
                                 >
                                     {p.label}
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </div>
