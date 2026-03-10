@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "@/components/portfolio/NavBar";
 import HeroSection from "@/components/portfolio/HeroSection";
 import CaseStudySection from "@/components/portfolio/CaseStudySection";
 import ReleaseRecordSection from "@/components/portfolio/ReleaseRecordSection";
@@ -8,7 +9,8 @@ import FooterSection from "@/components/portfolio/FooterSection";
 
 export default function Home() {
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden bg-[#070911]">
+            <NavBar currentPage="Home" />
             <HeroSection />
             <CaseStudySection />
             <ReleaseRecordSection />
