@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { createPageUrl } from "@/utils";
+import { Link } from "react-router-dom";
 
 export default function ClosingStatement() {
     return (
@@ -33,13 +34,13 @@ export default function ClosingStatement() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <a
-                            href={createPageUrl("Home")}
+                        <Link
+                            to={createPageUrl("Home")}
                             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-slate-900 font-semibold text-sm hover:bg-slate-100 transition-colors duration-200"
                         >
                             View Core Platform Expertise
                             <ArrowRight className="w-4 h-4" />
-                        </a>
+                        </Link>
                         <div className="flex items-center gap-3 text-sm text-slate-500">
                             <div className="flex gap-2">
                                 {["bg-violet-400", "bg-blue-400", "bg-emerald-400"].map((c, i) => (
