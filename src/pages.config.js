@@ -49,12 +49,14 @@
  */
 import Home from './pages/Home';
 import ProductLaunchGallery from './pages/ProductLaunchGallery';
+import EnterpriseTransformation from './pages/EnterpriseTransformation';
 import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
     "Home": Home,
     "ProductLaunchGallery": ProductLaunchGallery,
+    "EnterpriseTransformation": EnterpriseTransformation,
 }
 
 export const pagesConfig = {
